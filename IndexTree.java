@@ -112,6 +112,7 @@ public class IndexTree {
 	private IndexNode delete(IndexNode root, String word) {
             int comparison = word.compareTo(root.getWord());
             
+	//this will return when there is no node that is the correct --> the try catch will catch the null pointer exception
             if(root == null) {
                 return null;
             }
