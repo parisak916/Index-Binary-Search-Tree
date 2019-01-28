@@ -56,7 +56,7 @@ public class IndexTree {
                
             }
             
-            //if word is greater than root --> add to the left subtree
+            //if word is less than root --> add to the left subtree
             else if(compare < 0) {
                 if(root.left != null) {
                     add(root.left, word, lineNumber);
@@ -68,7 +68,7 @@ public class IndexTree {
                 }
             }
             
-            //if word is less than root --> add to the right subtree
+            //if word is greater than root --> add to the right subtree
             else if(compare > 0 )
             {
                 if(root.right != null) {
