@@ -127,7 +127,7 @@ public class IndexTree {
                root.right = delete(root.right, word);
                return root;
             }
-            
+            //not checking for the comparison implies you have found the comparison
             else  {
                 //root has no children
                 if(root.left == null && root.right == null){
